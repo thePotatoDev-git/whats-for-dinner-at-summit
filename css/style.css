@@ -1,7 +1,7 @@
 /* Box Model Hack */
 * {
      box-sizing: border-box;
-     outline: 1px solid red;
+     /* outline: 1px solid red; */
 }
 
 /* Clear fix hack */
@@ -54,7 +54,6 @@ footer {
 /*******************************************/
 .window {
      background: rgba(255, 255, 255, 0.212);
-     height: 500px;
      width: 600px;
      border-radius: 15px;
 }
@@ -62,9 +61,18 @@ footer {
      margin: 10% 0;
 }
 .window section {
-     margin: 20% 0;
+     margin: 10% 0;
 }
 span {
      display: block;
      margin: 5% 0;
+}
+.options {
+     display: flex;
+     justify-content: space-around;
+}
+.options div {
+     border: 1px solid white;
+     height: 100px;
+     width: 200px;
 }
