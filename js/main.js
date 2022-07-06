@@ -26,6 +26,7 @@ function midBudget() {
 }
 
 function highBudget() {
+    foodOptions = highBudgetOptions;
     document.querySelector('#option1').innerHTML = foodOptions[0];
     document.querySelector('#option2').innerHTML = foodOptions[foodOptions.length - 1];
 }
