@@ -14,31 +14,39 @@ function lowBudget() {
     // Round one options
     foodOptions = lowBudgetOptions;
     console.log(foodOptions);
-    document.querySelector('#option1').innerHTML = foodOptions[0];
-    document.querySelector('#option2').innerHTML = foodOptions[foodOptions.length - 1];
+    document.querySelector('#option1Text').innerHTML = foodOptions[0];
+    document.querySelector('#option2Text').innerHTML = foodOptions[foodOptions.length - 1];
 
 }
 
 function midBudget() {
     foodOptions = midBudgetOptions;
-    document.querySelector('#option1').innerHTML = foodOptions[0];
-    document.querySelector('#option2').innerHTML = foodOptions[foodOptions.length - 1];
+    document.querySelector('#option1Text').innerHTML = foodOptions[0];
+    document.querySelector('#option2Text').innerHTML = foodOptions[foodOptions.length - 1];
 }
 
 function highBudget() {
     foodOptions = highBudgetOptions;
-    document.querySelector('#option1').innerHTML = foodOptions[0];
-    document.querySelector('#option2').innerHTML = foodOptions[foodOptions.length - 1];
+    document.querySelector('#option1Text').innerHTML = foodOptions[0];
+    document.querySelector('#option2Text').innerHTML = foodOptions[foodOptions.length - 1];
 }
 
 function chooseOption1() {
-    foodOptions.pop();
-    console.log(foodOptions);
-    document.querySelector('#option2').innerHTML = foodOptions[foodOptions.length - 1];
+    if (foodOptions.length === 2) {
+        alert(`${foodOptions[0].toUpperCase()}! It's what's for dinner.`);
+    } else {
+        foodOptions.pop();
+        console.log(foodOptions);
+        document.querySelector('#option2Text').innerHTML = foodOptions[foodOptions.length - 1];
+    }
 }
 
 function chooseOption2() {
-    foodOptions.shift();
-    console.log(foodOptions);
-    document.querySelector('#option1').innerHTML = foodOptions[0];
+    if (foodOptions.length === 2) {
+        alert(`${foodOptions[1].toUpperCase()}! It's what's for dinner.`);
+    } else {
+        foodOptions.shift();
+        console.log(foodOptions);
+        document.querySelector('#option1Text').innerHTML = foodOptions[0];
+    }
 }
