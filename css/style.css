@@ -27,8 +27,7 @@ body {
      color: white;
      display: flex;
      justify-content: center;
-     align-items: center;
-     height: 100vh;
+     height: 80vh;
 }
 h1, p {
      text-align: center;
@@ -56,6 +55,8 @@ footer {
      background: rgba(255, 255, 255, 0.212);
      width: 600px;
      border-radius: 15px;
+     padding: 30px;
+     margin-top: 50px;
 }
 .window h1 {
      margin: 10% 0;
@@ -84,4 +85,14 @@ span {
 .options div:active {
      background: rgba(46, 189, 94, 0.438);
      transition: background-color 0s ease-in-out
+}
+
+@media screen and (max-width: 720px) {
+     .window {
+          margin: 20px;
+     }
+     .options {
+          flex-direction: column;
+          align-items: center;
+     }
 }
