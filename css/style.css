@@ -74,13 +74,15 @@ span {
 }
 .options div {
      border: 1px solid white;
+     border-radius: 20px;
+     background: rgba(43, 47, 90, 0.541);
      height: 100px;
      width: 200px;
      padding: 10px;
      transition: background-color 0.4s;
 }
 .options div:hover {
-     background: rgba(43, 47, 90, 0.555);
+     background: rgba(43, 47, 90, 0.932);
 }
 .options div:active {
      background: rgba(46, 189, 94, 0.438);
