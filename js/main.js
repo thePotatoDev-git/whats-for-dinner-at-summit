@@ -12,7 +12,7 @@ let foodOptions = [];
 
 function lowBudget() {
     // Round one options
-    foodOptions = lowBudgetOptions;
+    foodOptions = lowBudgetOptions.sort(() => Math.random() - 0.5)
     console.log(foodOptions);
     document.querySelector('#option1Text').innerHTML = foodOptions[0];
     document.querySelector('#option2Text').innerHTML = foodOptions[foodOptions.length - 1];
@@ -20,13 +20,15 @@ function lowBudget() {
 }
 
 function midBudget() {
-    foodOptions = midBudgetOptions;
+    foodOptions = midBudgetOptions.sort(() => Math.random() - 0.5);
+    console.log(foodOptions);
     document.querySelector('#option1Text').innerHTML = foodOptions[0];
     document.querySelector('#option2Text').innerHTML = foodOptions[foodOptions.length - 1];
 }
 
 function highBudget() {
-    foodOptions = highBudgetOptions;
+    foodOptions = highBudgetOptions.sort(() => Math.random() - 0.5);
+    console.log(foodOptions);
     document.querySelector('#option1Text').innerHTML = foodOptions[0];
     document.querySelector('#option2Text').innerHTML = foodOptions[foodOptions.length - 1];
 }
