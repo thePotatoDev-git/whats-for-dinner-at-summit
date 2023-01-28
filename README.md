@@ -13,4 +13,4 @@ For this project, I used vanilla HTML, CSS, and JavaScript. First, I made a simp
 
 ## Lessons Learned: 
 
-This was one of my first projects I built after learning JavaScript. It was quite a challenge for me because I hadn't understood all the quirks and tricks I could do with JavaScript. For a while, I couldn't figure out how to remove certain options after they've "lost" in a head-to-head. Eventually I figured out a solution by using the .pop() and .shift() methods. It was an exciting moment for me, and I realized there's so much more you could do with JavaScript.
+This was one of my first projects I built after learning JavaScript. It was quite a challenge for me because I hadn't understood all the quirks and tricks I could do with JavaScript. For a while, I couldn't figure out how to remove certain options after they've "lost" in a head-to-head. Eventually I figured out a solution by using the .pop() and .shift() methods. It was a lightbulb moment for me, and I realized there's so much more you could do with JavaScript.
