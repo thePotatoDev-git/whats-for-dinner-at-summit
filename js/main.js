@@ -6,8 +6,8 @@ document.querySelector('#option2').addEventListener('click', chooseOption2);
 
 
 const lowBudgetOptions = ['Burger King', 'Aldi Pizza', 'Aldi Stroganoff', 'Aldi salad and chicken', 'Taco Bell', 'Aldi Sausage and Peppers', 'Aldi Pesto Pasta'];
-const midBudgetOptions = ['Sarku', 'Charley\'s Cheesesteaks', 'Smash Burger', 'Eon\'s', 'Taqueria Los Gueros', 'Bloom Chicken', 'Juicy Platters', 'Bahama Breeze', 'Chipotle'];
-const highBudgetOptions = ['Mama Chicken', 'Katsune', 'Woodstone Pizza', 'Tavolino\'s Pizza', 'Blackbeard Ramen', 'Jim Bob\'s', 'Rebar'];
+const midBudgetOptions = ['Sarku', 'Charley\'s Cheesesteaks', 'Smash Burger', 'Eon\'s', 'Taqueria Los Gueros', 'Juicy Platters', 'Bahama Breeze', 'Chipotle', 'Soup Dumbling Plus'];
+const highBudgetOptions = ['Mama Chicken', 'Katsune', 'Woodstone Pizza', 'Blackbeard Ramen', 'Jim Bob\'s', 'Rebar', 'Thumbs Up Ramen', 'Bloom Chicken'];
 let foodOptions = [];
 
 function lowBudget() {
